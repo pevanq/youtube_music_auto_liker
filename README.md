@@ -15,7 +15,7 @@ A Chrome extension that automatically "Likes" (👍) every song in a YouTube Mus
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/your-username/youtube_music_auto_liker.git
+   git clone https://github.com/pevenq/youtube_music_auto_liker.git
    ```
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable **Developer mode** (toggle in the top-right corner).
