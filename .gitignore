@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Chrome extension metadata (auto-generated)
+_metadata/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Packed extension
+*.crx
+*.pem
+*.zip

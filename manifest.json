@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Music Auto-Liker",
+  "version": "1.0.0",
+  "description": "Automatically 'Like' all songs in a YouTube Music playlist.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "cookies",
+    "storage",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://music.youtube.com/*",
+    "*://*.youtube.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "開啟設定"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
