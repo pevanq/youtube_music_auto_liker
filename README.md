@@ -34,17 +34,6 @@ A Chrome extension that automatically "Likes" (👍) every song in a YouTube Mus
 5. Click **▶ Start** and watch the progress.
 6. Use **⏸ Pause**, **▶ Resume**, or **⏹ Stop** at any time.
 
-## Build Release Folder
-
-To avoid packaging debug files or local artifacts, build a clean `release/` folder:
-
-```bash
-bash scripts/build_release.sh
-```
-
-Upload only the generated files inside `release/` when publishing.
-
-
 ## ⚠️ Disclaimer
 
 This extension interacts with YouTube's **internal, undocumented API**. Use it at your own risk. Excessive or aggressive usage may result in temporary rate-limiting by YouTube. Using a reasonable delay (≥ 1 second) is recommended.
