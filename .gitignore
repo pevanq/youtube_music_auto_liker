@@ -26,3 +26,6 @@ test_*.js
 
 # Generated release folder
 release/
+
+# Build scripts
+scripts/
