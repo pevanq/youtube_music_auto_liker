@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "YouTube Music Auto-Liker",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Automatically 'Like' all songs in a YouTube Music playlist.",
   "icons": {
     "16": "icon16.png",
@@ -14,8 +14,7 @@
     "declarativeNetRequest"
   ],
   "host_permissions": [
-    "*://music.youtube.com/*",
-    "*://*.youtube.com/*"
+    "https://music.youtube.com/*"
   ],
   "declarative_net_request": {
     "rule_resources": [

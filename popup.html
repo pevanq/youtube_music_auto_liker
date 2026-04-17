@@ -102,7 +102,7 @@
   <div class="options">
     <label>
       Delay (seconds):
-      <input type="number" id="delayMs" value="1.0" min="0.5" step="0.5" style="width: 50px; background:#1e1e1e; border:1px solid #3f3f3f; color:#fff; padding:2px;">
+      <input type="number" id="delayMs" value="1.0" min="1" step="0.5" style="width: 50px; background:#1e1e1e; border:1px solid #3f3f3f; color:#fff; padding:2px;">
     </label>
     <label style="display:flex; align-items:center; cursor:pointer;">
       <input type="checkbox" id="reverseOrder" checked style="margin-right:8px;">
@@ -116,6 +116,8 @@
     <button id="pauseBtn" style="display:none; flex:1; background-color:#ffaa00; color:#0f0f0f;">⏸ Pause</button>
     <button id="stopBtn" style="display:none; flex:1; background-color:#555;">⏹ Stop</button>
   </div>
+  
+  <div id="infoBox" style="margin-top:15px; color:#00cc00; font-weight:bold; font-size:13px; text-align:center;"></div>
   
   <div id="status">Ready. Please paste a URL and click Start.</div>
 

@@ -15,3 +15,14 @@ _metadata/
 *.crx
 *.pem
 *.zip
+
+# Local debug artifacts / secrets
+headers_auth.json
+dump.json
+full_dump.json
+parse_dump.py
+test_*.py
+test_*.js
+
+# Generated release folder
+release/
