@@ -321,17 +321,20 @@ async function getInnerTubeApiKey() {
   if (cachedApiKey) return cachedApiKey;
   try {
     const res = await fetch('https://music.youtube.com/');
+    if (!res.ok) {
+      throw new Error(`Homepage request failed HTTP ${res.status}`);
+    }
     const html = await res.text();
     const match = html.match(/"INNERTUBE_API_KEY"\s*:\s*"([^"]+)"/);
     if (match && match[1]) {
       cachedApiKey = match[1];
       return cachedApiKey;
     }
+    throw new Error('INNERTUBE_API_KEY not found in homepage response.');
   } catch (err) {
     console.error("Failed to dynamically fetch API Key", err);
+    throw new Error(`Failed to dynamically fetch API Key: ${err?.message || err}`);
   }
-  // Fallback to the universally known static key if parsing fails
-  return 'AIzaSyC9XL3ZjWddXya6X74dJoCTL-WEYFDNX30';
 }
 
 // Fetch ALL tracks from the playlist using pagination
